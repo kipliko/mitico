@@ -1,6 +1,6 @@
 {
-  "title": "Miticissimo",
-  "description": "Bella ciao",
+  "title": "Kafka Scenario",
+  "description": "How to create a Kafka Cluster",
   "difficulty": "Intermediate",
   "time": "20",
   "details": {
@@ -25,6 +25,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "backend"
   }
 }
