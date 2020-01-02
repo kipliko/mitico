@@ -9,7 +9,7 @@
             {"file": "Dockerfile", "target": "/root"},
             {"file": "MLproject", "target": "/root"}
         ]
-    }
+    },
     "steps": [
       {
         "title": "Step 1",
