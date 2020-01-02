@@ -29,7 +29,7 @@
 	"MLproject",
 	"train.py",
 	"wine-quality.csv"
-  ]
+  ],
   "environment": {
     "uilayout": "terminal"
   },
