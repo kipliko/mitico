@@ -21,7 +21,7 @@
       "text": "finish.md"
     },
 	"assets": {
-		"host01": [
+		"node01": [
 		  {
 			"file": "*",
 			"target": "~/"
