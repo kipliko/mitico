@@ -6,5 +6,7 @@ Create the Docker network that is used to run the Confluent containers.
 
 Varie:
 Lista dei nodi: `kubectl get nodes`{{execute}}
+
 Lista dei pods: `kubectl get pods`{{execute}}
+
 Lista dei services: `kubectl get services`{{execute}}

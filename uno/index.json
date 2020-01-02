@@ -19,16 +19,17 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-	"assets": {
-		"node01": [
-		  {
-			"file": "*",
-			"target": "~/"
-		  }
-		]
-	}
+    }
   },
+  "files": [
+    ".dockerignore",
+	"Dockerfile",
+	"kubernetes_config.json",
+	"kubernetes_job_template.yaml",
+	"MLproject",
+	"train.py",
+	"wine-quality.csv"
+  ]
   "environment": {
     "uilayout": "terminal"
   },
