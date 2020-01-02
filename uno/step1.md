@@ -12,6 +12,11 @@ Create Build
 Push image on dockerhub.
 `docker push pscarpino/mlflow-docker-example`{{execute}}
 
+#################################
+Test image:
+`docker run -it pscarpino/mlflow-docker-example /bin/bash`{{execute}}
+#################################
+
 Install MLFlow
 `pip install mlflow`{{execute}}
 `pip install kubernetes`{{execute}}
@@ -22,9 +27,14 @@ Launch Kubernates job:
 Describe job:
 `kubectl describe jobs/paolo-job`{{execute}}
 
-`pods=$(kubectl get pods --selector=job-name=paolo-job --output=jsonpath='{.items[*].metadata.name}')`{{execute}}
+Retrieve pod id: `pods=$(kubectl get pods --selector=job-name=paolo-job --output=jsonpath='{.items[*].metadata.name}')`{{execute}}
 
-`kubectl logs $pods`{{execute}}
+See logs of pod: `kubectl logs $pods`{{execute}}
+
+Describe pod: `kubectl get pods $pods --output=yaml`{{execute}}
+
+
+-----------------------------------------------------------------
 
 Create the Docker network that is used to run the Confluent containers.
 `mlflow run https://github.com/kipliko/mlflow-test.git --backend kubernetes --backend-config mlflow-test/kubernetes_config.json`{{execute}}
