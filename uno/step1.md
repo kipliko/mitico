@@ -4,7 +4,7 @@ Clone MLFlow project
 `cd mlflow-test`{{execute}}
 
 Login into DockerHub
-`docker login --username=pscarpino --password-stdin`{{execute}}
+`docker login --username=pscarpino --password=Dublino123`{{execute}}
 
 Create Build
 `docker build -t pscarpino/mlflow-docker-example -f Dockerfile .`{{execute}}
@@ -18,6 +18,13 @@ Install MLFlow
 
 Launch Kubernates job:
 `kubectl apply -f mlflow-test/test_kubernetes_job_template.yaml`{{execute}}
+
+Describe job:
+`kubectl describe jobs/paolo-job`{{execute}}
+
+`pods=$(kubectl get pods --selector=job-name=paolo-job --output=jsonpath='{.items[*].metadata.name}')`{{execute}}
+
+`kubectl logs $pods`{{execute}}
 
 Create the Docker network that is used to run the Confluent containers.
 `mlflow run https://github.com/kipliko/mlflow-test.git --backend kubernetes --backend-config mlflow-test/kubernetes_config.json`{{execute}}
