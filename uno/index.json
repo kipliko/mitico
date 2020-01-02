@@ -4,12 +4,6 @@
   "difficulty": "Intermediate",
   "time": "20",
   "details": {
-	"assets": {
-        "host01": [
-            {"file": "Dockerfile", "target": "/root"},
-            {"file": "MLproject", "target": "/root"}
-        ]
-    },
     "steps": [
       {
         "title": "Step 1",
@@ -27,15 +21,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    ".dockerignore",
-	"Dockerfile",
-	"kubernetes_config.json",
-	"kubernetes_job_template.yaml",
-	"MLproject",
-	"train.py",
-	"wine-quality.csv"
-  ],
   "environment": {
     "uilayout": "terminal"
   },
