@@ -19,7 +19,35 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+	"assets": {
+		"client": [
+		  {
+			"file": "Dockerfile",
+			"target": "~/"
+		  },
+		  {
+			"file": "kubernetes_config.json",
+			"target": "~/"
+		  },
+		  {
+			"file": "kubernetes_job_template.yaml",
+			"target": "~/"
+		  },
+		  {
+			"file": "MLproject",
+			"target": "~/"
+		  },
+		  {
+			"file": "train.py",
+			"target": "~/"
+		  },
+		  {
+			"file": "wine-quality.csv",
+			"target": "~/"
+		  }
+		]
+	}
   },
   "environment": {
     "uilayout": "terminal"
